@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="plonetheme.acmolenbeek">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="plonetheme.acmolenbeek Install Profile"
+      directory="profiles/default"
+      description="Uninstalls plonetheme.acmolenbeek"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="plonetheme.acmolenbeek Uninstall Profile"
+      directory="profiles/uninstall"
+      description="Uninstalls plonetheme.acmolenbeek"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      />
+
+</configure>

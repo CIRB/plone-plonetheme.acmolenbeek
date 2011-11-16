@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<object>
+  <order manager="plone.portaltop" skinname="plonetheme.acmolenbeek">
+    <viewlet name="plone.header" />
+    <viewlet name="plone.personal_bar" />
+    <viewlet name="plone.app.i18n.locales.languageselector" />
+    <viewlet name="plone.path_bar" />
+  </order>
+  <order manager="plone.portalheader" skinname="plonetheme.acmolenbeek">
+    <viewlet name="plone.skip_links" />
+    <viewlet name="plone.site_actions" />
+    <viewlet name="plone.searchbox" />
+    <viewlet name="plone.logo" />
+    <viewlet name="plone.global_sections" />
+  </order>
+  <order manager="plone.contentviews" skinname="plonetheme.acmolenbeek">
+    <viewlet name="plone.contentviews" />
+    <viewlet name="plone.contentactions" />
+  </order>
+  <order manager="plone.portalfooter" skinname="plonetheme.acmolenbeek">
+    <viewlet name="plone.footer" />
+    <viewlet name="plone.colophon" />
+  </order>
+
+  <order manager="acmolenbeek.portallogolang" skinname="plonetheme.acmolenbeek">
+    <viewlet name="acmolenbeek.logolang" />
+  </order>
+  <order manager="acmolenbeek.newportaltop" skinname="plonetheme.acmolenbeek">
+    <viewlet name="acmolenbeek.newpersonal_bar" />
+  </order>
+  <order manager="acmolenbeek.portalnewfooter" skinname="plonetheme.acmolenbeek">
+    <viewlet name="acmolenbeek.newfooter" />
+  </order>
+  <order manager="acmolenbeek.portalnewlanguageselector" skinname="plonetheme.acmolenbeek">
+    <viewlet name="acmolenbeek.newlanguageselector" />
+  </order>
+  <order manager="acmolenbeek.portalnewsearchbox" skinname="plonetheme.acmolenbeek">
+    <viewlet name="acmolenbeek.newsearchbox" />
+  </order>
+  <order manager="acmolenbeek.portalnewbreadcrumb" skinname="plonetheme.acmolenbeek">
+    <viewlet name="acmolenbeek.newbreadcrumb" />
+  </order>
+
+  <hidden manager="plone.portaltop" skinname="plonetheme.acmolenbeek">
+    <viewlet name="plone.personal_bar" />
+    <viewlet name="plone.path_bar" />
+  </hidden>
+  <hidden  manager="plone.portalheader" skinname="plonetheme.acmolenbeek">
+    <viewlet name="plone.logo" />
+    <viewlet name="plone.site_actions" />
+    <viewlet name="plone.searchbox" />
+    <viewlet name="plone.personal_bar" />
+    <viewlet name="plone.app.i18n.locales.languageselector" />
+  </hidden>
+  <hidden manager="plone.abovecontent" skinname="plonetheme.acmolenbeek">
+    <viewlet name="plone.path_bar" />
+  </hidden>
+  <hidden manager="plone.portalfooter" skinname="plonetheme.acmolenbeek">
+    <viewlet name="plone.footer" />
+    <viewlet name="plone.colophon" />
+    <viewlet name="plone.site_actions" />
+  </hidden>
+</object>
+
+
+
+
+
+
+

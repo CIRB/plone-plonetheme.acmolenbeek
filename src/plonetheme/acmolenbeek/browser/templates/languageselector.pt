@@ -1,0 +1,32 @@
+<!--
+<tal:language tal:define="available view/available; languages view/languages; showFlags view/showFlags;">
+    <ul id="portal-newlanguageselector" tal:condition="python:available and len(languages)>=2">
+        <li tal:repeat="lang languages">
+            <span tal:define="code lang/code; selected lang/selected" tal:attributes="class python: selected and 'currentLanguage' or '';">
+                <a href="" tal:define="flag lang/flag|nothing; name lang/name" tal:attributes="href lang/url; title name">
+                    <tal:nonflag condition="python:not showFlags or not flag" replace="code">
+                        language code
+                    </tal:nonflag>
+                </a>
+            </span>
+        </li>
+    </ul>
+</tal:language>
+-->
+
+
+<tal:language tal:define="available view/available; languages view/languages; showFlags view/showFlags;">
+    <ul id="portal-newlanguageselector" tal:condition="python:available and len(languages)>=2">
+        <tal:language repeat="lang languages">
+        <li tal:define="code lang/code; selected lang/selected" tal:attributes="class python: selected and 'currentLanguage' or '';">
+                <a href="" tal:define="flag lang/flag|nothing; name lang/name" tal:attributes="href lang/url; title name">
+                    
+                    <tal:nonflag condition="python:not showFlags or not flag" replace="code">
+                        language code
+                    </tal:nonflag>
+                </a>&nbsp; 
+        </li>
+        </tal:language>
+    </ul>
+</tal:language>
+

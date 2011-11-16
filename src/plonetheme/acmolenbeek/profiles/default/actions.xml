@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object name="portal_actions" meta_type="Plone Actions Tool" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+    <object name="portal_tabs" meta_type="CMF Action Category">
+        <object name="index_html" meta_type="CMF Action" i18n:domain="plone">
+            <property name="title" >Home</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${globals_view/navigationRootUrl}</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr"></property>
+            <property name="permissions">
+                <element value="False"/>
+            </property>
+            <property name="visible">False</property>
+        </object>
+        <object name="Accueil" meta_type="CMF Action" i18n:domain="plonetheme.acmolenbeek">
+            <property name="title" >Accueil</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${portal_url}/nouvelles-2011</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:request.LANGUAGE=="fr"</property>
+            <property name="permissions">
+                <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="Home" meta_type="CMF Action" i18n:domain="plonetheme.acmolenbeek">
+            <property name="title">Home</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${portal_url}/nieuws-2011</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:request.LANGUAGE=="nl"</property>
+            <property name="permissions">
+                <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="Guichet electronique" meta_type="CMF Action" i18n:domain="plonetheme.acmolenbeek">
+            <property name="title" >Guichet electronique</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${portal_url}/guichet-electronique</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:request.LANGUAGE=="fr"</property>
+            <property name="permissions">
+                <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="Guichet electronique-nl" meta_type="CMF Action" i18n:domain="plonetheme.acmolenbeek">
+            <property name="title">Elektronisch loket</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${portal_url}/guichet-electronique-nl</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:request.LANGUAGE=="nl"</property>
+            <property name="permissions">
+                <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="Liens web" meta_type="CMF Action" i18n:domain="plonetheme.acmolenbeek">
+            <property name="title" >Liens web</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${portal_url}/liens-web</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:request.LANGUAGE=="fr"</property>
+            <property name="permissions">
+                <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="Liens web-nl" meta_type="CMF Action" i18n:domain="plonetheme.acmolenbeek">
+            <property name="title">Weblinks</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${portal_url}/liens-web-nl</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:request.LANGUAGE=="nl"</property>
+            <property name="permissions">
+                <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="Sitemap" meta_type="CMF Action" i18n:domain="plonetheme.acmolenbeek">
+            <property name="title" >Sitemap</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${portal_url}/sitemap</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:request.LANGUAGE=="fr"</property>
+            <property name="permissions">
+                <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="Sitemap-nl" meta_type="CMF Action" i18n:domain="plonetheme.acmolenbeek">
+            <property name="title" >Sitemap</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${portal_url}/sitemap</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:request.LANGUAGE=="nl"</property>
+            <property name="permissions">
+                <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="Publications" meta_type="CMF Action" i18n:domain="plonetheme.acmolenbeek">
+            <property name="title" >Publications</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${portal_url}/publications</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:request.LANGUAGE=="fr"</property>
+            <property name="permissions">
+                <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="Publications-nl" meta_type="CMF Action" i18n:domain="plonetheme.acmolenbeek">
+            <property name="title" >Gemeenteliijke publicaties</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${portal_url}/publications-nl</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:request.LANGUAGE=="nl"</property>
+            <property name="permissions">
+                <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="Contact" meta_type="CMF Action" i18n:domain="plonetheme.acmolenbeek">
+            <property name="title" >Nous contacter</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${portal_url}/nous-contacter</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:request.LANGUAGE=="fr"</property>
+            <property name="permissions">
+                <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="Contact-nl" meta_type="CMF Action" i18n:domain="plonetheme.acmolenbeek">
+            <property name="title" >Contacteer ons</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${portal_url}/nous-contacter-nl</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:request.LANGUAGE=="nl"</property>
+            <property name="permissions">
+                <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+    </object>
+
+
+    <object name="user" meta_type="CMF Action Category">
+        <property name="title"></property>
+        <object name="preferences" meta_type="CMF Action" i18n:domain="plone">
+            <property name="title" i18n:translate="">Preferences</property>
+            <property name="description" i18n:translate=""></property>
+            <property
+              name="url_expr">string:${globals_view/navigationRootUrl}/@@personal-preferences</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:member is not None</property>
+            <property name="permissions">
+            <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="login" meta_type="CMF Action" i18n:domain="plone">
+            <property name="title" i18n:translate="">Log in</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${globals_view/navigationRootUrl}/login</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:member is None</property>
+            <property name="permissions">
+            <element value="View"/>
+            </property>
+            <property name="visible">False</property>
+        </object>
+        <object name="join" meta_type="CMF Action" i18n:domain="plone">
+            <property name="title" i18n:translate="">Register</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${globals_view/navigationRootUrl}/@@register</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:member is None</property>
+            <property name="permissions">
+            <element value="Add portal member"/>
+            </property>
+            <property name="visible">False</property>
+        </object>
+        <object name="undo" meta_type="CMF Action" i18n:domain="plone">
+            <property name="title" i18n:translate="">Undo</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${globals_view/navigationRootUrl}/undo_form</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:member is not None</property>
+            <property name="permissions">
+            <element value="List undoable changes"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="logout" meta_type="CMF Action" i18n:domain="plone">
+            <property name="title" i18n:translate="">Log out</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${globals_view/navigationRootUrl}/logout</property>
+            <property name="icon_expr"></property>
+            <property name="available_expr">python:member is not None</property>
+            <property name="permissions">
+            <element value="View"/>
+            </property>
+            <property name="visible">True</property>
+        </object>
+        <object name="addFavorite" meta_type="CMF Action" i18n:domain="plone">
+            <property name="title" i18n:translate="">Add to favorites</property>
+            <property name="description" i18n:translate=""></property>
+            <property name="url_expr">string:${object_url}/addtoFavorites</property>
+            <property name="icon_expr"></property>
+            <property
+              name="available_expr">python: portal.portal_membership.getHomeFolder() is not None</property>
+            <property name="permissions">
+            <element value="View"/>
+            </property>
+            <property name="visible">False</property>
+        </object>
+        <object name="favorites" meta_type="CMF Action" i18n:domain="plone">
+            <property name="title" i18n:translate="">My favorites</property>
+            <property name="description" i18n:translate=""></property>
+            <property
+              name="url_expr">string:${portal/portal_membership/getHomeUrl}/Favorites/folder_contents</property>
+            <property name="icon_expr"></property>
+            <property
+              name="available_expr">python:(member is not None) and hasattr(portal.portal_membership.getHomeFolder(), "Favorites")</property>
+            <property name="permissions">
+            <element value="View"/>
+            </property>
+            <property name="visible">False</property>
+        </object>
+    </object>
+
+
+	<object name="document_actions" meta_type="CMF Action Category">
+
+		<object name="sendto" meta_type="CMF Action" i18n:domain="acforest.site">
+			<property name="title" i18n:translate="" i18n:domain="acforest.site">Send this</property>
+			<property name="description" i18n:translate=""></property>
+			<property name="url_expr">string:$object_url/sendto_form</property>
+			<property name="link_target"></property>
+			<property name="icon_expr">string:$portal_url/mail_icon.png</property>
+			<property name="available_expr"></property>
+			<property name="permissions">
+				<element value="Allow sendto"/>
+			</property>
+			<property name="visible">True</property>
+		</object>
+
+		<object name="print" meta_type="CMF Action" i18n:domain="plone">
+			<property name="title" i18n:translate="" i18n:domain="plone">Print this</property>
+			<property name="description" i18n:translate=""></property>
+			<property name="url_expr">string:javascript:this.print();</property>
+			<property name="link_target"></property>
+			<property name="icon_expr">string:$portal_url/print_icon.png</property>
+			<property name="available_expr"></property>
+			<property name="permissions">
+				<element value="View"/>
+			</property>
+			<property name="visible">True</property>
+		</object>
+
+	</object>
+
+</object>

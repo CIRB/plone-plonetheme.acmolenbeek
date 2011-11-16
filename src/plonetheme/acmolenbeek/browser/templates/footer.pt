@@ -1,0 +1,16 @@
+<div id="newfooter" metal:define-macro="portal_footer">
+    <div tal:condition="python:request.LANGUAGE=='fr'">
+        <!--FRANCAIS-->
+        <div id="portal-newfooter">
+            <img width="776" height="29" src="footer.gif" alt="Molenbeek-Saint-Jean" />
+            <div id="copyright">&copy; 2010 Site officiel de la commune de Molenbeek-Saint-Jean</div>
+        </div>
+    </div>
+    <div tal:condition="python:request.LANGUAGE=='nl'">
+        <!--NEDERLANDS-->
+        <div id="portal-newfooter">
+            <img width="776" height="29" src="footer.gif" alt="Sint-Jans-Molenbeek" />
+            <div id="copyright">&copy; 2010 Offici&euml;le website van de gemeente van Sint-Jans-Molenbeek</div>
+        </div>
+    </div>
+</div>

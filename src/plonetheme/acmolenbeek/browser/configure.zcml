@@ -1,0 +1,139 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plonetheme.acmolenbeek">
+
+  <!-- 'plonetheme.acmolenbeek' Zope 3 browser layer -->
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="plonetheme.acmolenbeek"
+      />
+
+  <!-- Viewlets registration -->
+  <!-- Zope 3 browser resources -->
+
+  <!-- Resource directory for images -->
+  <browser:resourceDirectory
+      name="plonetheme.acmolenbeek.images"
+      directory="images"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <!-- Resource directory for stylesheets -->
+  <browser:resourceDirectory
+      name="plonetheme.acmolenbeek.stylesheets"
+      directory="stylesheets"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+<!-- The new logo -->
+    <browser:viewletManager
+        name="acmolenbeek.portallogolang"
+        provides=".interfaces.IPortalLogo"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+    <browser:viewlet
+        name="acmolenbeek.logolang"
+        manager=".interfaces.IPortalLogo"
+        class=".viewlets.LogoViewlet"
+        permission="zope2.View"
+        />
+
+<!-- The new personal_bar -->
+    <browser:viewletManager
+        name="acmolenbeek.portalnewpersonal_bar"
+        for="*"
+        provides=".interfaces.IPortalNewPersonal_bar"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+
+    <browser:viewlet
+        name="acmolenbeek.newpersonal_bar"
+        manager=".interfaces.IPortalNewPersonal_bar"
+        class=".viewlets.NewPersonal_bar"
+        permission="zope2.View"
+        />
+
+
+
+<!-- Render the document byline -->
+  <browser:viewlet
+      name="plone.belowcontenttitle.documentbyline"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+      class="plone.app.layout.viewlets.content.DocumentBylineViewlet"
+      permission="zope2.View"
+      template="templates/document_byline.pt"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+<!-- The new footer -->
+    <browser:viewletManager
+        name="acmolenbeek.portalnewfooter"
+        provides=".interfaces.IPortalNewFooter"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+
+    <browser:viewlet
+        name="acmolenbeek.newfooter"
+        for="*"
+        manager=".interfaces.IPortalNewFooter"
+        template="templates/footer.pt"
+        permission="zope2.View"
+        />
+
+<!-- The new language selector -->
+    <browser:viewletManager
+        name="acmolenbeek.portalnewlanguageselector"
+        for="*"
+        provides=".interfaces.IPortalNewLanguageSelector"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+
+    <browser:viewlet
+        name="acmolenbeek.newlanguageselector"
+        for="*"
+        manager=".interfaces.IPortalNewLanguageSelector"
+        class=".viewlets.NewLanguageSelector"
+        template="templates/languageselector.pt"
+        permission="zope2.View"
+        />
+
+<!-- The new search box -->
+    <browser:viewletManager
+        name="acmolenbeek.portalnewsearchbox"
+        for="*"
+        provides=".interfaces.IPortalNewSearchbox"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+
+    <browser:viewlet
+        name="acmolenbeek.newsearchbox"
+        for="*"
+        manager=".interfaces.IPortalNewSearchbox"
+        class=".viewlets.NewSearchbox"
+        permission="zope2.View"
+        />
+
+<!-- The new breadcrumb -->
+  <browser:viewletManager
+        name="acmolenbeek.portalnewbreadcrumb"
+        provides=".interfaces.IPortalNewBreadcrumb"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        />
+
+  <browser:viewlet
+        name="acmolenbeek.newbreadcrumb"
+        manager=".interfaces.IPortalNewBreadcrumb"
+        class=".viewlets.PathBarViewlet"
+        permission="zope2.View"
+        />
+
+
+</configure>

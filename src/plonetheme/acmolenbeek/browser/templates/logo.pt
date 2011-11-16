@@ -1,0 +1,22 @@
+<span tal:define="portal_url view/navigation_root_url;">
+<a metal:define-macro="portal_logo"
+   id="portal-logo"
+   accesskey="1"
+   tal:attributes="href view/navigation_root_url"
+   i18n:domain="plone">
+    <div tal:condition="python:request.LANGUAGE=='fr'">
+        <img src="" tal:attributes="src string:${portal_url}/logo_fr.jpg" alt="" />
+        <!--FRANCAIS-->
+    </div>
+    <div tal:condition="python:request.LANGUAGE=='nl'">
+        <img src="" tal:attributes="src string:${portal_url}/logo_nl.jpg" alt=""  />
+        <!--NEDERLANDS-->
+    </div>
+             
+<!--
+    <img src="logo.jpg" alt="" 
+         tal:replace="structure view/logo_tag" />
+-->
+
+</a>
+</span>
