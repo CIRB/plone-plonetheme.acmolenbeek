@@ -8,104 +8,64 @@ Molenbeek.fs
 Procédure à effectuer sur la plateforme Plone 3.3.5
 ------------------------------------------------------
 
-Travail réalisé sur les produits CIRB :
-- Profile de désinstallation de acmolenbeek.site.
+* update du code pour avoir le uninstall du theme
 
-Au préalable :
-- Sauvegarder la base de données.
+* supprimer les instances de twolanguage portlet dans la page d'accueil
 
-* En ZMI :
+* /site18/plone/portal_quickinstaller/manage_installProductsForm
 
-  * portal_quickinstaller: uninstall Kupu, acmolenbeek.site
-  * portal_skins: remove twolanguagesportlet
-  * portal_skins/properties: remove twolanguagesportlet, cachesetup, kupu_tests, linguafaq_script, linguafaq_image
+* uninstall
+ CacheSetup
+ TinyMCE
+ acmolenbeek.site
+ collective.indexing
+ twolanguageportlet
 
-    * Two Languages Portlet
+* /site18/plone/portal_skins/custom/manage_main remove content
 
-     -> Attention, ce portlet est utilisé dans le site et doit être supprimé :
-          -> /site18/plone - left_slots
-          -> /site18/plone - right_slots
+* http://localhost:8090/site18/plone/portal_skins/manage_propertiesForm
+  twolanguagesportlet
+  cachesetup
+  kupu_tests kupu kupu_plone
+  linguafaq*
 
-          !!!!! Cela suprime beaucoup de contenu dans les deux colonnes.
-          Note : le produit fonctionne en Plone 4.1.
+* http://localhost:8090/site18/plone/portal_css/manage_cssForm
+  twolanguagesportlet.css
+  kupu*.css
+  
 
-      -> Désinstaller via le portal_quickinstaller
-          -> supprime twolanguagesportlet de portal_skins
-          -> supprime twolanguagesportlet des skins dans portal_skins > Properties
-          -> supprime twolanguagesportlet.css de portal_css
+* /site18/plone/@@activate-expert-mode-for-fixing-persistent-utilities
+  tout ce qui est relatif à collective.indexing :
+  - <InterfaceClass collective.indexing.indexer.IPortalCatalogQueueProcessor> -> 3 occurences
+  - <InterfaceClass collective.indexing.interfaces.IIndexingConfig> -> 2 occurences
 
-    * collective.indexing
-
-      * Désinstaller via le portal_quickinstaller
-
-      * Pour supprimer complètement le produit, ajouter au buildout (egg+zcml) wildcard.fixpersistentutilities.
-        Se rendre à la page site18/plone/@@activate-expert-mode-for-fixing-persistent-utilities et supprimer
-        tout ce qui est relatif à collective.indexing :
-        - <InterfaceClass collective.indexing.indexer.IPortalCatalogQueueProcessor> -> 3 occurences
-        - <InterfaceClass collective.indexing.interfaces.IIndexingConfig> -> 2 occurences
-
-    * TinyMCE Editor Support -> Désinstaller via le portal_quickinstaller
-
-    * acmolenbeek.site
-
-      * Supprimer tout le contenu de portal_skins/custom.
-
-      * Désinstaller acmolenbeek.site via le portal_quickinstaller.
-        -> supprime les actions spécifiques au site du groupe "portal_tabs" et réinitialise celles du group "user"
-        -> supprime +++resource++acmolenbeek.site.stylesheets/main.css de portal_css
-        -> supprime acmolenbeek_site_custom_images / acmolenbeek_site_custom_templates / acmolenbeek_site_styles de portal_skins
-        -> supprime acmolenbeek_site_custom_images / acmolenbeek_site_custom_templates / acmolenbeek_site_styles > Properties
-
-      * Passer le portal_css en mode "Debug/development"
-
-      * Supprimer le cache de votre navigateur et forcer le rechargement d'une des pages du site (/front-page).
-
-      * Désativer le mode "Debug/development" dans le portal_css.
-
-      ==> Le site est opérationnel avec la skin par défaut de Plone.
-
-    * Packer la base de données.
-
-    * Copier la base de données Molenbeek.fs sur la plateforme Plone 4.1
+* Copier la base de données Molenbeek.fs sur la plateforme Plone 4.1
 
 Procédure à effectuer sur la plateforme Plone 4.1
-------------------------------------------------------
+-------------------------------------------------
 
-Au préalable :
-- Faire une copie de la base de données.
+* Verifier qu'on a ATContentTypes 2.15
 
-IMPORTANT - Il est nécessaire de configurer un blobstorage pour notre base de données dans le buildout.
-            Nous l'avons fait dans base.cfg (rechercher "blobstorage-molenbeek" - 2 occurences).
-            Plus d'informations sur la configuration en mode zeo et non-zeo : http://dev.plone.org/plone/ticket/10130
-            Remarque: il est nécessaire de relancer le buildout.
+* http://localhost:8401/site18/plone/@@plone-upgrade
 
-Le fichier base.cfg que nous utilisons pour le développement comprends la liste des addons (egg+zcml).
-Il est combiné au fichier versions.cfg qui fixe les versions de chaque module additionnel.
+* http://localhost:8401/site18/plone/portal_catalog/manage_catalogAdvanced
+ Clear and Rebuild
 
-NOTE POUR MAC : beaucoup d'erreur lors la mise à jour de Plone lié à l'absence du binaire pdftotext
-                => solution: port install poppler
+* http://localhost:8401/site18/plone/@@blob-file-migration
 
-* En ZMI
+* http://localhost:8401/site18/plone/@@blob-image-migration
 
-    * Mettre à jour le site Plone - site18/plone/@@plone-upgrade (faire un "Mode de test" au préalable!).
-      Etudier les logs pour vérifier que tout est bon.
+      Exemple :
+          Failed migration for object /site4/plone/berchem-sainte-agathe-nl/bestanden/espaces-publics (File -> File)
+          ...
+              raise CopyError(eNotSupported % escape(id))
+          CopyError:
+          ...
+      ==> L'erreur est dûe par exemple à un fichier en langue "fr" au sein d'un dossier "nl".
+          Il est nécessaire de corriger (ou supprimer) manuellement ces fichiers et de relancer la migration.
 
-    * Reconstruire le catalogue : portal_catalog > Advanced > Clear and Rebuild
+* http://localhost:8401/site18/plone/prefs_install_products_form
 
-    * Migrer les types de contenu existants (fichiers et images) vers blob via (il faut parfois s'y prendre à plusieurs reprises):
-      - /site18/plone/@@blob-file-migration
-      - /site18/plone/@@blob-image-migration
-      IMPORTANT : Il y a des erreurs empêchant la migration d'être complète.
-                  Exemple :
-                      Failed migration for object /site4/plone/berchem-sainte-agathe-nl/bestanden/espaces-publics (File -> File)
-                      ...
-                          raise CopyError(eNotSupported % escape(id))
-                      CopyError:
-                      ...
-                  ==> L'erreur est dûe par exemple à un fichier en langue "fr" au sein d'un dossier "nl".
-                      Il est nécessaire de corriger (ou supprimer) manuellement ces fichiers et de relancer la migration.
-
-    * Traiter les modules installés via /site18/plone/prefs_install_products_form
       - Mettre à jour "PloneFormGen"
       - Mettre à jour "Support des copies de travail (Iterate)"
       - Vous pouvez désinstaller "Kupu"
