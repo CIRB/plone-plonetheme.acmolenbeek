@@ -44,6 +44,7 @@
   <hidden manager="plone.portaltop" skinname="plonetheme.acmolenbeek">
     <viewlet name="plone.personal_bar" />
     <viewlet name="plone.path_bar" />
+    <viewlet name="plone.app.i18n.locales.languageselector" />
   </hidden>
   <hidden  manager="plone.portalheader" skinname="plonetheme.acmolenbeek">
     <viewlet name="plone.logo" />

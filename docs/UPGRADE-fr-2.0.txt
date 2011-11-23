@@ -75,45 +75,5 @@ Procédure à effectuer sur la plateforme Plone 4.1
 
     * Créer une alternative aux portlets "Two Languages Portlet" supprimés dans la première partie de la migration.
 
-* Penser à configurer l'éditeur par défaut du site: /@@editing-controlpanel
-* Penser à activer les liens par UID: /portal_tinymce/@@tinymce-controlpanel
-  Idem si utilisation de CKEditor.
-
-* Problèmes rencontrés :
-
-    * Les liens du site Plone 3.3.5 utilisent des paths relatifs (ex: ../images/mon-image.jpg),
-      cela ne pose pas de problème à l'affichage mais certaines images peuvent être en erreurs quand
-      on est en édition.
-
-      Solution partielle : installer Products.kupu 1.5.0 et lancer l'utilitaire de convertion
-                           de convertion des paths relatifs vers uuid (convertion partielle des
-                           contenus).
-
-      Conseil : utiliser l'éditeur de texte TinyMCE qui est fournit avec Plone et qui
-                aura une meilleure pérennitée.
-
-
-Note:
-
-- Un comportement inattendu a lieu avec les liens Accueil/Home du path_bar et de la barre de menu
-  horizontal (mélange fr/nl) sûrement lié au fait que les deux liens mènent à la même url quelque soit la
-  langue (problème de cache). Le problème intervient également sur le site actuel http://www.molenbeek.be/.
-  ---> nous avons adapté les liens Accueil/Home pour le path_bar (cf. path_bar.pt) et la barre de menu
-       vertical (cf. actions.xml).
-
-Notes et dysfonctionnement :
-** Pour chacun des points, merci de nous indiquer si vous souhaitez que l'on investisse du temps **
-- Petite différences dans le plan du site (manque des icônes).
-- Petite différence dans le portlet "Evénements à venir": il n'y a plus d'icône dans le portlet,
-  et par conséquent plus de décalage vers la droite (les icônes étaient cachées par css).
-  --> souhaitez-vous forcer un décalage ?
-
-Tests très rapide, qui seront plus poussés si on conserve le thème actuel :
-Remarques générales : - amélioration du placement du résultat "livesearch".
-- IE 7 - ok en consultation,
-         bug mineur de mise en page: sitemap
-- IE 8 - ok
-- IE 9 - ok
-- Firefox - ok
-- Chrome - ok
-- Safari - ok
+* http://localhost:8401/site18/plone/@@editing-controlpanel
+* http://localhost:8401/site18/plone/portal_tinymce/@@tinymce-controlpanel

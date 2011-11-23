@@ -236,8 +236,8 @@
 
 	<object name="document_actions" meta_type="CMF Action Category">
 
-		<object name="sendto" meta_type="CMF Action" i18n:domain="acforest.site">
-			<property name="title" i18n:translate="" i18n:domain="acforest.site">Send this</property>
+		<object name="sendto" meta_type="CMF Action" i18n:domain="plonetheme.acmolenbeek">
+			<property name="title" i18n:translate="" i18n:domain="plonetheme.acmolenbeek">Send this</property>
 			<property name="description" i18n:translate=""></property>
 			<property name="url_expr">string:$object_url/sendto_form</property>
 			<property name="link_target"></property>
