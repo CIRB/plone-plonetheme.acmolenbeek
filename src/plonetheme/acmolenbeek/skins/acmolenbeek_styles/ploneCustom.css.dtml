@@ -1,0 +1,409 @@
+/* ######################################################## */
+/*                                                          */
+/*         ADMINISTRATION COMMUNALE DE MOLENBEEK            */
+/*                                                          */
+/* ######################################################## */
+
+
+/* ############### GENERAL  ############### */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+img{
+    border:0;
+}
+
+body{
+    width:955px;
+    margin:0 auto;
+    padding:0;
+    font:69% "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif;
+    background-color:#0F3775;
+    color:#0F3775;
+}
+#visual-portal-wrapper{
+    background-color:#FFF;
+}
+
+/* ############### HEADER  ############### */
+
+/* Logo */
+#portal-logo img{
+    margin:25px 0 0 0;
+    padding:0;
+}
+#acmolenbeek-logolang{
+   background-color:#0F3775;
+}
+/* Personaltools */
+#portal-personaltools {
+    background-color:#0F3775;
+    border:0;
+    padding:0;
+}
+#portal-personaltools li a{
+    color:#FFF;
+}
+/* Global nav */
+#portal-globalnav{
+    background-color:#F9CC17;
+    text-align:center;
+    font-weight:bold;
+    border-bottom:1px solid #FFF;
+    padding:2px 0;
+}
+#portal-globalnav li a{
+    border-width:0;
+    text-transform:none;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+#portal-globalnav li a:hover{
+    border:0;
+    background-color:#FFF;
+}
+#portal-globalnav li.selected a {
+    border-width:0;
+    text-transform:none;
+    padding-top:2px;
+    padding-bottom:2px;
+    background-color:#F9CC17;
+}
+/* Breadcrumb */
+#portal-breadcrumbs{
+    background-color:#FFF;
+    border:0;
+    padding-left:10px;
+}
+#portal-breadcrumbs img{
+    margin-top:-8px;
+    margin-right:10px;
+}
+/* Language selector */
+#newlanguageselector{
+    margin:23px 0 0 7px;
+    position:absolute;
+}
+#newlanguageselector ul li{
+    display:inline;
+}
+#newlanguageselector ul li a:link, #newlanguageselector ul li a:visited, #newlanguageselector ul li a:hover, #newlanguageselector ul li a:active{
+    color:#F9CC17;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:14px;
+}
+#newlanguageselector ul li a:hover, #newlanguageselector ul li a:active{
+    border-bottom:7px solid #F9CC17;
+}
+#newlanguageselector ul li.currentLanguage{
+    font-weight:bold;
+}
+/* Searchbox */
+#newsearchbox{
+    position:absolute;
+    margin:58px 0 0 6px;
+}
+#newsearchbox .searchButton{
+    background-color:#0F3775;
+    border:1px solid #F9CC17;
+    color:#F9CC17;
+    font-weight:bold;
+    text-transform:uppercase;
+    padding:0 3px;
+    background-image:none;
+}
+#newsearchbox #searchGadget{
+    height:15px;
+    border:1px solid #0F3775;
+    margin-right:10px;
+}
+
+/* ############### NAVIGATION - LEFT SIDE ############### */
+
+/* Zone de police */
+.portletLinguaPortlet, .portletLinguaPortlet dd{
+    border:0;
+    font-weight:bold;
+    font-size:15px;
+    color:#0F3775;
+    margin:0;
+    padding:0;
+}
+#portal-column-two .portletLinguaPortlet, .portletLinguaPortlet dd{
+    font-size:12px;
+}
+#portal-column-two .portletLinguaPortlet dd a:link, #portal-column-two .portletLinguaPortlet dd a:visited{
+    border:0;
+    text-decoration:underline;
+    background-color:transparent;
+    color:#436976;
+}
+.portletLinguaPortlet dd a:link, .portletLinguaPortlet dd a:visited{
+    border:0;
+    color:#0F3775;
+}
+.portletLinguaPortlet dd a:hover, .portletLinguaPortlet dd a:active{
+    border-bottom:7px solid #F9CC17;
+}
+/* Navigation classique */
+.portletNavigationTree{
+    border:0;
+}
+.portletNavigationTree .portletHeader{
+    border:0;
+    background-color:#FFF;
+    text-transform:none;
+    font-weight:bold;
+    font-size:15px;
+    color:#0F3775;
+    line-height:normal;
+    padding:0;
+}
+.portletNavigationTree .portletHeader a{
+    color:#0F3775;
+}
+.portletNavigationTree .portletItem{
+    border:0;
+    padding:0 0 0 14px;
+    font-size:12px;
+    line-height:normal;
+}
+.portletNavigationTree dd{
+    line-height:normal;
+}
+.navTreeItem a, dd.portletItem .navTreeItem a{
+    border:0;
+}
+.portletNavigationTree .portletItem .navTreeLevel0 li a{
+    border:0;
+    line-height: 1.35em;
+    color:#0F3775 !important;
+    padding-left: 0px !important;
+    background: none;
+}
+.portletNavigationTree .portletItem .navTreeLevel0 li a:link, .portletNavigationTree .portletItem .navTreeLevel0 li a:visited{
+    border:0;
+    border-left:7px solid #FFF;
+    background-color:#FFF;
+}
+.navTreeCurrentItem{
+    border:0!important;
+    /*border-left:7px solid #F9CC17 !important;*/
+    background-color:#FFF;
+}
+.navTreeLevel1 {
+    /*border-color:#FFF !important;*/
+    border-left:1px solid #0F3775 !important;
+    background-color:#FFF;
+}
+.portletNavigationTree .portletItem .navTreeLevel0 li a:hover, .portletNavigationTree .portletItem .navTreeLevel0 li a:active{
+    border:0;
+    border-left:7px solid #F9CC17;
+    background-color:#FFF;
+}
+.portletNavigationTree .portletItem .navTreeLevel0 li a img{
+    display:none;
+}
+.portletNavigationTree .portletItem .navTreeLevel1 li a:link, .portletNavigationTree .portletItem .navTreeLevel1 li a:visited{
+    border:0;
+    border-left:7px solid #FFF;
+    background-color:#FFF;
+}
+.portletNavigationTree .portletItem .navTreeLevel1 li a:hover, .portletNavigationTree .portletItem .navTreeLevel1 li a:active{
+    border:0;
+    border-left:7px solid #F9CC17;
+    background-color:#FFF;
+}
+.portletNavigationTree .portletItem .navTreeLevel1 li a.navTreeCurrentItem{
+    border:0;
+    border-left:7px solid #F9CC17 !important;
+}
+
+/* ############### CONTENT  ############### */
+
+/* Event */
+div.eventDetails table tbody tr:first-child {
+    display:none;
+}
+table.listing th, .stx table th {
+    border:0;
+    text-align:right;
+    width:150px;
+    background-color:#FFF;
+}
+table.vertical td {
+    border:0;
+}
+
+h1, h2 {
+    border:0;
+    font-weight:bold;
+    font-variant:small-caps;
+    color:#0F3775;
+    margin-bottom:25px;
+}
+body#content {
+    width:100%;
+}
+
+.documentActions ul {
+    display:block;
+    list-style-image:none!important;
+    list-style-type:none!important;
+    margin:-0.9em 0 0!important;
+    padding:0 0.5em;
+}
+
+/* ############### NAVIGATION - RIGHT SIDE  ############### */
+
+#portal-column-two .visualPadding {
+    padding:2em 0;
+}
+
+/* Calendar */
+.portletCalendar {
+    margin:0 0 20px 0;
+    /*border:1px solid #0F3775;*/
+    border:0;
+    /*width:175px;*/
+    /*background-color:#E5E5F2;*/
+}
+.portletCalendar .portletHeader {
+    text-align:center;
+    /*background-color:#CECEE6;*/
+    /*border-top:10px solid #CECEE6;*/
+    line-height:1.5em;
+    font-weight:bold;
+    color:#0F3775;
+    font-size:14px;
+    border:0;
+    text-transform:none;
+}
+.ploneCalendar .weekdays th{
+    background-color:#FFF;
+}
+.portletCalendar dt {
+    background-color:#FFF;
+}
+.portletHeader, .managedPortlet .portletHeader{
+    background-color:#FFF;
+}
+.portletCalendar .portletHeader a {
+    color:#000180;
+    text-decoration:none;
+}
+.portletCalendar .portletItem{
+    border:0;
+}
+.portletCalendar .portletItem table.ploneCalendar thead{
+    line-height:1.5em;
+}
+.portletCalendar .portletItem table.ploneCalendar {
+    width:130px;
+    margin:10px auto 10px auto;
+}
+.portletCalendar .portletItem table.ploneCalendar thead tr th, .portletCalendar .portletItem table.ploneCalendar tbody tr td {
+    padding:2px;
+    text-align:right;
+}
+.ploneCalendar .todaynoevent, .ploneCalendar .todayevent {
+    border:2px solid #0F3775;
+}
+.ploneCalendar .todayevent {
+    background-color:#F9CC17;
+}
+.ploneCalendar .event{
+    background-color:#F9CC17;
+    color:#0F3775;
+}
+
+/* Events */
+.portletHeader, .managedPortlet .portletHeader {
+    text-transform:none;
+    font-weight:bold;
+    color:#0F3775;
+    font-size:14px;
+    border:0;
+}
+.portletHeader a {
+    color:#000180;
+    text-decoration:none;
+}
+.portlet {
+    width:180px;
+}
+.portletItem {
+    border:0;
+    background-color:#FFF;
+}
+dd.portletItem a img{
+    visibility:hidden;
+}
+.portletEvents .portletFooter{
+    display:none;
+}
+.portletEvents{
+    border:0;
+}
+
+/* Actu */
+.portletFooter{
+    background:none;
+    border:0;
+    margin-bottom:20px;
+}
+
+/* ############### FOOTER  ############### */
+
+#newfooter{
+    margin:0 0 0 163px;
+}
+#copyright{
+    margin:30px 0 0 0;
+    font-weight:bold;
+    height:30px;
+}
+
+/* ############### SITE CONFIGURATION ################# */
+
+ul.configlets li a {
+	text-decoration: none;
+	border: none!important;
+}
+ul.configlets {
+	list-style: none!important;
+}
+
+/* ############### SITEMAP ################# */
+
+#portal-sitemap a {
+    border-bottom: 1px solid transparent!important;
+    padding-left: 5px;
+}
+
+#portal-sitemap a:visited {
+    color:#003366;
+}
+#portal-sitemap a:hover {
+    border-bottom: 1px solid #8CACBB!important;
+}
+
+
+
+/* PloneFormGen */
+.ArchetypesMultiSelectionWidget{
+    clear:none;
+    float:left;
+}
+
+
+
+
+
+dd.portletItem a.external-link img{
+    visibility:visible;
+}
