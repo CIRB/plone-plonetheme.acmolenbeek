@@ -2,23 +2,23 @@
 <object name="portal_skins" allow_any="False" cookie_persistence="False"
    default_skin="plonetheme.acmolenbeek">
 
- <object name="acmolenbeek_site_custom_images" remove="True"
+ <object name="acmolenbeek_images" remove="True"
     meta_type="Filesystem Directory View"
-    directory="plonetheme.acmolenbeek:skins/acmolenbeek_site_custom_images"/>
- <object name="acmolenbeek_site_custom_templates" remove="True"
+    directory="plonetheme.acmolenbeek:skins/acmolenbeek_images"/>
+ <object name="acmolenbeek_templates" remove="True"
     meta_type="Filesystem Directory View"
-    directory="plonetheme.acmolenbeek:skins/acmolenbeek_site_custom_templates"/>
- <object name="acmolenbeek_site_styles" remove="True"
+    directory="plonetheme.acmolenbeek:skins/acmolenbeek_templates"/>
+ <object name="acmolenbeek_styles" remove="True"
     meta_type="Filesystem Directory View"
-    directory="plonetheme.acmolenbeek:skins/acmolenbeek_site_styles"/>
+    directory="plonetheme.acmolenbeek:skins/acmolenbeek_styles"/>
 
  <skin-path name="plonetheme.acmolenbeek" based-on="Plone Classic Theme" remove="True">
-  <layer name="acmolenbeek_site_custom_images" remove="True"
+  <layer name="acmolenbeek_images" remove="True"
      insert-after="custom"/>
-  <layer name="acmolenbeek_site_custom_templates" remove="True"
-     insert-after="acmolenbeek_site_custom_images"/>
-  <layer name="acmolenbeek_site_styles" remove="True"
-     insert-after="acmolenbeek_site_custom_templates"/>
+  <layer name="acmolenbeek_templates" remove="True"
+     insert-after="acmolenbeek_images"/>
+  <layer name="acmolenbeek_styles" remove="True"
+     insert-after="acmolenbeek_templates"/>
  </skin-path>
 
 </object>
