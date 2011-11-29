@@ -1,0 +1,31 @@
+<tal:block metal:define-macro="portlet"
+  tal:define="portal_state context/@@plone_portal_state;
+              lang_fr python:portal_state.language()=='fr';">
+<dl class="portlet portletLinguaPortlet"
+    i18n:domain="lingua.portlet.portlets">
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span tal:condition="lang_fr">Zone de Police</span>
+        <span tal:condition="not:lang_fr">Politiezone</span>
+        <span class="portletTopRight"></span>
+    </dt>
+    <dd class="portletItem odd">
+      <tal:block tal:condition="lang_fr">
+		<p><a class="external-link" href="http://www.policelocale.be/5340">Zone de Police</a></p>
+		<p><a class="external-link" href="http://www.policelocale.be/5340"><strong> </strong></a><strong><a class="external-link" href="http://extra.molenbeek.be/"><strong>Extranet  réservé aux mandataires :<br /></strong></a></strong></p>
+		<p align="left"><img class="image-inline" src="resolveuid/507f03b08ce4db4f148d9503de8a9ae9/@@images/image/thumb" alt="INTRANETFR.jpg" /></p>
+		<p align="left">&nbsp;</p>
+		<p align="left"><a title="Guichet électronique" class="internal-link" href="guichet-electronique/guichet-electronique">DEMARCHES ADMINISTRATIVES :</a><br /><a title="La commune à votre service - FAQ  (Foire aux Questions) : QUE FAIRE SI..." class="internal-link" href="guichet-electronique/la-commune-a-votre-service-faq-foire-aux-questions-que-faire-si../la-commune-a-votre-service-faq-foire-aux-questions-que-faire-si..">La commune à votre service <br />(FAQ : Foire aux questions)</a></p>
+		<p><a class="external-link" href="http://extra.molenbeek.be/"><strong><br /></strong></a></p>
+      </tal:block>
+      <tal:block tal:condition="not:lang_fr">
+		<p><a class="external-link" href="http://www.lokalepolitie.be/5340">Politiezone</a></p>
+		<p><a class="external-link" href="http://www.lokalepolitie.be/5340"><strong> </strong></a><strong><a class="external-link" href="http://extra.molenbeek.be/"><strong>Extranet  voorbehouden</strong></a></strong></p>
+		<p align="left"><strong><a class="external-link" href="http://extra.molenbeek.be/"><strong>voor mandatarissen :<br /> </strong></a></strong></p>
+		<p align="left"><strong><img class="image-inline" src="resolveuid/507f03b08ce4db4f148d9503de8a9ae9/@@images/image/thumb" alt="INTRANETFR.jpg" /></strong></p>
+		<p align="left">&nbsp;</p>
+		<p align="left"><strong><a title="VGV (Vaak Gestelde Vragen) / De gemeente tot uw dienst" class="internal-link" href="guichet-electronique-nl/la-commune-a-votre-service-faq-foire-aux-questions-que-faire-si../la-commune-a-votre-service-faq-foire-aux-questions-que-faire-si..">Administratieve stappen - VGV<br />(Vaak Gestelde Vragen)<br />De gemeente tot uw dienst<br /><br /></a></strong></p>
+      </tal:block>
+    </dd>
+</dl>
+</tal:block>
