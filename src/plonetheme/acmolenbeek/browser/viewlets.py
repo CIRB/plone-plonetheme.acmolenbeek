@@ -34,7 +34,7 @@ class NewPersonal_bar(ViewletBase):
 
         sm = getSecurityManager()
 
-        self.user_actions = context_state.actions().get('user', None)
+        self.user_actions = context_state.actions('user')
 
         plone_utils = getToolByName(self.context, 'plone_utils')
         self.getIconFor = plone_utils.getIconFor
