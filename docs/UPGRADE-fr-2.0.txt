@@ -10,9 +10,136 @@ Procédure à effectuer sur la plateforme Plone 3.3.5
 
 * update du code pour avoir le uninstall du theme
 
-* supprimer les instances de twolanguage portlet dans la page d'accueil
+* http://localhost:8090/site18/plone/
+supprimer les instances de twolanguage portlet dans la page d'accueil
 
-* /site18/plone/portal_quickinstaller/manage_installProductsForm
+PORTLET à gauche
+----------------
+    TITRE FR
+    Zone de Police
+    HTML: FR
+    <p><a class="external-link" href="http://www.policelocale.be/5340">Zone de Police</a></p>
+    <p><a class="external-link" href="http://www.policelocale.be/5340"><strong> </strong></a><strong><a class="external-link" href="http://extra.molenbeek.be/"><strong>Extranet  réservé aux mandataires :<br /></strong></a></strong></p>
+    <p align="left"><img class="image-inline" src="resolveuid/507f03b08ce4db4f148d9503de8a9ae9/@@images/image/thumb" alt="INTRANETFR.jpg" /></p>
+    <p align="left">&nbsp;</p>
+    <p align="left"><a title="Guichet électronique" class="internal-link" href="guichet-electronique/guichet-electronique">DEMARCHES ADMINISTRATIVES :</a><br /><a title="La commune à votre service - FAQ  (Foire aux Questions) : QUE FAIRE SI..." class="internal-link" href="guichet-electronique/la-commune-a-votre-service-faq-foire-aux-questions-que-faire-si../la-commune-a-votre-service-faq-foire-aux-questions-que-faire-si..">La commune à votre service <br />(FAQ : Foire aux questions)</a></p>
+    <p><a class="external-link" href="http://extra.molenbeek.be/"><strong><br /></strong></a></p>
+    
+    TITRE NL
+    Politiezone
+    
+    HTML NL
+    <p><a class="external-link" href="http://www.lokalepolitie.be/5340">Politiezone</a></p>
+    <p><a class="external-link" href="http://www.lokalepolitie.be/5340"><strong> </strong></a><strong><a class="external-link" href="http://extra.molenbeek.be/"><strong>Extranet  voorbehouden</strong></a></strong></p>
+    <p align="left"><strong><a class="external-link" href="http://extra.molenbeek.be/"><strong>voor mandatarissen :<br /> </strong></a></strong></p>
+    <p align="left"><strong><img class="image-inline" src="resolveuid/507f03b08ce4db4f148d9503de8a9ae9/@@images/image/thumb" alt="INTRANETFR.jpg" /></strong></p>
+    <p align="left">&nbsp;</p>
+    <p align="left"><strong><a title="VGV (Vaak Gestelde Vragen) / De gemeente tot uw dienst" class="internal-link" href="guichet-electronique-nl/la-commune-a-votre-service-faq-foire-aux-questions-que-faire-si../la-commune-a-votre-service-faq-foire-aux-questions-que-faire-si..">Administratieve stappen - VGV<br />(Vaak Gestelde Vragen)<br />De gemeente tot uw dienst<br /><br /></a></strong></p>
+
+PORTLET à droite
+
+    pas de titre
+    
+    HTLM FR
+    <p style="text-align: left;"><img class="image-inline" src="resolveuid/7609150f52d9b21a2a0bb5cbb826eeaa" alt="calendar.jpg" /></p>
+    <p style="text-align: left;"><strong>Consultez ici l'AGENDA<br />des diverses activités à<br />Molenbeek </strong>| <a title="Agendas des activités à Molenbeek-Saint-Jean" class="internal-link" href="la-vie-a-molenbeek/loisirs/agendas/agendas">lire suite</a> |</p>
+    <p><a class="internal-link" href="agenda-21/agenda-21"><strong>AGENDA 21</strong></a></p>
+    <p style="text-align: left;"><span class="internal-link"><img class="image-inline" src="agenda-21/Logo%20Agenda%2021.jpg" alt="null" height="55" width="103" /></span></p>
+    <p style="text-align: left;"><span class="internal-link"><img class="image-inline" src="agenda-21/images/Visuel%20promenades%20def%20vignette.jpg" alt="null" height="150" width="102" /><br /></span><span class="internal-link"><br /><a class="internal-link" href="agenda-21/fichiers/Visuel%20promenades.pdf" target="_blank">3 promenades<br /> citoyennes autour<br /> du développement<br /> durable.</a><br /></span></p>
+    <p style="text-align: left;"><a class="internal-link" href="la-vie-a-molenbeek/espace-public/concours-photo-objectif-1080"><strong><strong><strong> </strong></strong></strong></a><strong><strong><strong><a title="Environnement - Propreté publique" class="internal" href="publications/environnement-proprete-publique/environnement-proprete-publique">ENVIRONNEMENT - PROPRETE PUBLIQUE : conseils utiles</a></strong></strong></strong></p>
+    <p style="text-align: left;"><strong><strong><strong><img class="image-inline" src="sujets/copy_of_AffichemarchdeNol2011.jpg/@@images/image/preview" alt="null" height="180" width="129" /></strong></strong></strong></p>
+    <p style="text-align: left;"><a class="internal-link" href="sujets/copy_of_AffichemarchdeNol2011.jpg" target="_blank">Marché de Noël</a></p>
+    <p style="text-align: left;"><strong><strong><strong><img class="image-inline" src="sujets/Solidaritobectifnord.jpg" alt="null" height="165" width="128" /></strong></strong></strong></p>
+    <p style="text-align: left;"><a class="internal-link" href="sujets/DanslecadredelasemainedelaSolidaritInternationale.pdf" target="_blank"><strong>semaine de la Solidarité Internationale</strong></a></p>
+    <p style="text-align: left;"><strong><strong><strong><img class="image-inline" src="sujets/Eau.jpg" alt="null" height="144" width="129" /></strong></strong></strong></p>
+    <p style="text-align: left;"><a class="internal-link" href="sujets/Vivaqua.pdf" target="_blank"><span class="internal-link">Expo: 120 ans d’eau à Bruxelles<br />ou la grande aventure de l’eau potable ...</span></a></p>
+    <p style="text-align: left;"><span class="internal-link"><strong><strong><strong><a class="internal-link" href="sujets/Leroyalephotoclubgerminal.pdf" target="_blank"></a></strong></strong></strong></span></p>
+    <p style="text-align: left;"><strong><strong><strong><span class="internal-link"><img class="image-inline" src="sujets/biblio-cinema-europa-brazil/bibliocinemaEuropaBrazil%20Vignette.jpg" alt="null" height="133" width="100" /></span><br /></strong></strong></strong></p>
+    <p style="text-align: left;"><strong><a class="internal-link" href="images/Affiche-fete-de-la-nature.jpg" target="_blank"></a></strong></p>
+    <p><a class="internal-link" href="sujets/biblio-cinema-europa-brazil/bibliocinemaEuropaBrazil.pdf" target="_blank">BIBLIO-BRASIL</a></p>
+    <p style="text-align: left;"><img class="image-inline" src="sujets/pour-la-derniere-expo-cafetarts-de-lannee-2011/CafetArts_SBenyaich_web%20vignette.jpg" alt="null" height="120" width="94" /><em><strong><a class="internal-link" href="sujets/contes-et-magie/conte%20et%20magie.pdf" target="_blank"></a></strong></em></p>
+    <p style="text-align: left;"><a class="internal-link" href="sujets/pour-la-derniere-expo-cafetarts-de-lannee-2011/pour-la-derniere-expo-cafetarts-de-lannee-2011-cest-le-bouquet-final"><strong>Sarra Benyaich<br /></strong></a><strong><a class="internal-link" href="sujets/pour-la-derniere-expo-cafetarts-de-lannee-2011/pour-la-derniere-expo-cafetarts-de-lannee-2011-cest-le-bouquet-final">expo Cafet'arts </a></strong></p>
+    <p style="text-align: left;"><img class="image-inline" src="sujets/elections-cj_vote/Elections%20CJ_Vote.JPG/@@images/image/thumb" alt="null" /></p>
+    <p style="text-align: left;"><a class="internal-link" href="sujets/elections-cj_vote/Elections%20CJ_Vote.pdf" target="_blank"><span class="internal-link"><strong>Élections 2011 du<br />Conseil de la Jeunesse <br />de la Communauté française</strong></span></a></p>
+    <p style="text-align: left;">&nbsp;</p>
+    <p style="text-align: left;"><img class="image-inline" src="images/QV.JPG/@@images/image/thumb" alt="null" height="133" width="92" /><a class="internal-link" href="fichiers/BrochureQuartiersVerts2011.pdf" target="_blank"><strong><br />Appel à projets Quartiers verts 2011 </strong></a></p>
+    <p style="text-align: left;"><img class="image-inline" src="images/Agenda%20de%20la%20maison%20des%20cultures.jpg/@@images/image/thumb" alt="null" /><br /><strong><a class="external-link" href="http://www.kidnapyourdesigner.com/client/018_MAISON_Automne_light.pdf" target="_blank">Agenda de la Maison, de septembre à Nöel!</a></strong></p>
+    <p style="text-align: left;"><strong><a class="internal-link" href="images/Affiche-fete-de-la-nature.jpg" target="_blank"></a></strong></p>
+    <p style="text-align: left;"><strong><strong><img class="image-inline" src="resolveuid/14fe115325cb3ad939daa127026d65d4" alt="x KarreVELD6149.jpg" height="84" width="84" /></strong></strong></p>
+    <p style="text-align: left;"><strong><strong> </strong></strong></p>
+    <p style="text-align: left;"><strong><strong>CHATEAU DU KARREVELD :<br />Prochains événements de la Culture française :<br /><a title="Culture française - agenda janvier à mars 2011" class="internal-link" href="CULTURE%20FRANCAISE_MOLENBEEK_agenda_janv_2011.pdf"><br /></a></strong></strong><a class="internal-link" href="la-vie-a-molenbeek/loisirs/culture-francophone/agenda%20culturel%20octobre-novembre-decembre.pdf" target="_blank"><span class="internal-link">AGENDA CULTUREL OCTOBRE - NOVEMBRE - DÉCEMBRE</span></a></p>
+    <p style="text-align: left;"><strong> </strong></p>
+    <p style="text-align: left;"><strong><strong><a class="external-link" href="http://www.lamaison1080hethuis.be/" target="_blank"><img class="image-inline" src="sujets/images/Logo%20MCCS.jpg" alt="null" height="99" width="85" /></a><br /></strong></strong></p>
+    <p style="text-align: left;"><strong><strong><a class="internal-link" href="sujets/la-maison-des-cultures-et-de-la-cohesion-sociale">MAISON DES CULTURES ET DE LA COHESION SOCIALE&nbsp;:<br />activités culturelles</a></strong> </strong></p>
+    <p style="text-align: left;">&nbsp;</p>
+    <p style="text-align: left;"><strong><strong><a title="Imprimer un formulaire" class="internal-link" href="guichet-electronique/imprimer-un-formulaire">ENERGIE : PRIMES </a></strong></strong></p>
+    <p style="text-align: left;"><strong> </strong></p>
+    <p style="text-align: left;"><strong><strong>PPAS 6D mod: </strong><strong>(Machtens/Belle-au-Bois-Dormant/Scheutbosch).<br /><a title="PPAS 6D def FR" class="internal-link" href="la-vie-a-molenbeek/accueil/fichiers/PPAS%206D%20def%20FR.ppsx" target="_blank"><span class="internal-link">Présentation (Powerpoint) de la séance d'information publique du 9/02/2011.</span></a><br /></strong></strong></p>
+    <p style="text-align: left;"><strong> </strong></p>
+    <p style="text-align: left;"><strong><strong> </strong></strong></p>
+    <p style="text-align: left;"><strong> </strong></p>
+    <p style="text-align: left;"><strong><strong>ENQUETES PUBLIQUES<br />Avis de la dernière</strong><strong> commission de concertation | <a title="Espace public" class="internal-link" href="la-vie-a-molenbeek/espace-public/espace-public">lire suite</a> |<br /><br />Urbanisme (28/05/09):<br /><a title="CDC_CANAL_fr.pdf" class="internal-link" href="fichiers-nl/CDC_CANAL_fr.pdf">Mission d'auteur de projet pour l'élaboration d'une étude urbanistique pour la zone canal "Molenbeek-CANAL 2009"</a></strong></strong></p>
+    <p style="text-align: left;"><strong> </strong></p>
+    <p style="text-align: left;"><strong><strong> </strong></strong></p>
+    <p style="text-align: left;"><strong> </strong></p>
+    <p style="text-align: left;"><strong><strong><a class="external-link" href="http://www.mediateurpensions.be/"><br />Seniors : informations concernant le sproblèmes de pensions</a></strong></strong></p>
+    <p style="text-align: left;"><strong> </strong></p>
+    <p style="text-align: left;"><strong><a title="Grippe A H1N1 - FR.pdf" class="internal-link" href="fichiers/Grippe%20A%20H1N1%20-%20FR.pdf"><strong><br />GRIPPE A H1N1 - Mesures préventives</strong></a></strong></p>
+    <p style="text-align: left;"><strong> </strong></p>
+    <p style="text-align: left;"><strong><br />Avis à la population :<br />Grippe aviaire :<br /><a title="Grippe aviaire FR 260308.pdf" class="internal-link" href="fichiers-nl/Grippe%20aviaire%20FR%20260308.pdf">Mesures de l'AFSCA</a> -<br /><a title="Grippe aviaire FR 260308.pdf" class="internal-link" href="fichiers-nl/Grippe%20aviaire%20FR%20260308.pdf">Mars 2008</a><br />Infos aussi sur <a class="external-link" href="http://www.afsca.be/">http://www.afsca.be</a></strong></p>
+    <p style="text-align: left;"><strong> </strong></p>
+    <p style="text-align: left;">&nbsp;</p>
+    <table style="text-align: left;" class="plain">
+    <tbody>
+    <tr>
+    <td><strong>Pour toute information sur les services communaux de<br />Molenbeek</strong>, contactez le Secrétariat communal :<br /><strong>Tél.: 02 412 37 42 - 02 412 37 07</strong><br />De début septembre à fin juin : ouvert du<br />lundi au vendredi de<br />7h45 à 12h00 -<br />13h00 à 16h00<br /><br />Juillet et août :<br />! Horaire d'été<br />Ouvert uniquement de 7h45 à 12h00</td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-align: left;"><strong> </strong></p>
+
+
+
+    HTML NL
+    
+    <p><strong><img class="image-inline" src="resolveuid/7609150f52d9b21a2a0bb5cbb826eeaa" alt="calendar.jpg" /></strong></p>
+    <p align="left"><strong>Raadpleeg hier de AGENDA van de activiteiten in Molenbeek | </strong><a title="Agenda van de activiteiten in Sint-Jans-Molenbeek" class="internal-link" href="la-vie-a-molenbeek-nl/loisirs/agendas/agendas">Lezen</a> <strong>|<br /></strong></p>
+    <p align="left"><strong><strong><a title="Leefmilieu - openbare netheid" class="internal" href="publications-nl/environnement-proprete-publique/environnement-proprete-publique">LEEFMILIEU - OPENBARE NETHEID : nuttige tips</a></strong></strong></p>
+    <p align="left"><strong><strong><img class="image-inline" src="sujets-nl/Solidaritobectifnord.jpg" alt="null" height="133" width="105" /></strong></strong></p>
+    <p align="left"><a class="internal-link" href="sujets-nl/Solidaritobectifnord.pdf" target="_blank"><strong>Week van de Internationale Solidariteit</strong></a></p>
+    <p align="left"><strong><strong><img class="image-inline" src="sujets-nl/Eau.jpg" alt="null" height="108" width="98" /></strong></strong></p>
+    <p align="left"><a class="internal-link" href="sujets-nl/Vivaqua.pdf" target="_blank">Expo: 120 jaar water in Brussel<br />of het groot drinkwateravontuur ...</a></p>
+    <p align="left">Tewerkstellingsdienst<br />Graaf van Vlaanderenstraat, 20<br />1080 Sint-Jans-Molenbeek</p>
+    <p><img class="image-inline" src="images-nl/Agenda%20de%20la%20maison%20des%20cultures.jpg/@@images/image/thumb" alt="null" /><a class="external-link" href="http://www.kidnapyourdesigner.com/client/018_MAISON_Automne_light.pdf" target="_blank"><br />Agenda van het Huis Automne - Herfst.</a></p>
+    <div id="gt-res-content" class="almost_half_cell">
+    <div dir="ltr">
+    <div id="gt-res-content" class="almost_half_cell">&nbsp;</div>
+    </div>
+    </div>
+    <p align="left"><strong><a title="MCCS" class="external-link" href="http://www.lamaison1080hethuis.be/" target="_blank"><img class="image-inline" src="sujets-nl/images/Logo%20MCCS%20nl.jpg" alt="null" height="103" width="91" /></a><br /></strong></p>
+    <p align="left"><strong><a class="internal-link" href="sujets-nl/la-maison-des-cultures-et-de-la-cohesion-sociale">HUIS VAN CULTUREN EN SOCIALE SAMENHANG</a></strong></p>
+    <p align="left"><strong> </strong></p>
+    <p align="left"><strong><img class="image-inline image" src="resolveuid/c80891314c0df96859cb86fa43f35659" alt="MOBILITE 10036.jpg" height="81" width="81" /><br /></strong></p>
+    <p align="left"><a title="MOBILITEIT : laatste info's" class="internal-link" href="mobiliteit-laatste-infos"><strong>MOBILITEIT : infos</strong></a></p>
+    <p align="left"><strong><strong><a title="Leefmilieu - openbare netheid" class="internal" href="publications-nl/environnement-proprete-publique/environnement-proprete-publique">LEEFMILIEU - OPENBARE NETHEID : nuttige tips</a><br /></strong></strong></p>
+    <p align="left"><a title="Een formulier afdrukken" class="internal-link" href="guichet-electronique-nl/imprimer-un-formulaire"><strong>ENERGIEPREMIES</strong></a><strong> </strong></p>
+    <p>BBP 6D mod&nbsp;:<br />(Machtens/Schoonslaapster/Scheutbosch)<br /><br /><a class="internal-link" href="la-vie-a-molenbeek-nl/accueil/fichiers/PPAS%206D%20def%20NDL.ppsx" target="_blank">Presentatie (Powerpoint) van de openbare informatievergadering van 9/02/2011</a></p>
+    <p><strong><br />Openbaar onderzoek<br />Bericht van het laatste openbaar onderzoek<br />| <a title="Openbare ruimte" class="internal-link" href="la-vie-a-molenbeek-nl/espace-public/espace-public">Lezen</a> |<br /><br /><br />STEDENBOUW (28/05/09):<br /><br /><a title="CDC_KANAAL_ndl.pdf" class="internal-link" href="fichiers-nl/CDC_KANAAL_ndl.pdf">Dienstenopdracht voor projectontwerper voor de uitwerking van een stedenbouwkundige studie voor de kanaalzone "Molenbeek- KANAAL 2009"</a></strong></p>
+    <p align="left"><strong><a title="Grippe A H1N1 NL.pdf" class="internal-link" href="fichiers-nl/Grippe%20A%20H1N1%20NL.pdf">GRIEP A H1N1 : Voorzorgsmaatregelen - Info hier</a></strong><strong> </strong></p>
+    <p align="left"><strong><a class="external-link" href="http://www.ombudsmanpensioenen.be/">Burgers met pensioenproblemen ?</a></strong></p>
+    <table class="plain">
+    <tbody>
+    <tr>
+    <td>Voor <strong>alle inlichtingen<br />over de gemeentelijke<br />diensten</strong>, gelieve<br />U aan te melden<br />bij het<br /><br />Gemeentesecretariaat :<br /><strong>02 412 37 42 - 02 412 37 07</strong><br />Open (van begin september tot eind juni):<br />7u45 tot 12u - 13u tot 16u (maandag tot vrijdag).<br /><br />Juli en augustus :<br />! Zomerdienst : open alleen van 7u45 tot 12u <br /></td>
+    </tr>
+    </tbody>
+    </table>
+    <p align="left">&nbsp;</p>
+    <p align="left"><strong><a title="Grippe aviaire NL 260308.pdf" class="internal-link" href="fichiers-nl/Grippe%20aviaire%20NL%20260308.pdf"><strong>Vogelgriep:<br /><br />Maart 2008 -<br />nieuwe maatregelen door<br />het voedselagentschap<br /><br />Meer info op:<br />http://www.afsca.be <br /></strong></a></strong></p>
+
+
+
+* http://localhost:8090/site18/plone/portal_quickinstaller/manage_installProductsForm
 
 * uninstall
  CacheSetup
@@ -21,20 +148,59 @@ Procédure à effectuer sur la plateforme Plone 3.3.5
  collective.indexing
  twolanguageportlet
 
-* /site18/plone/portal_skins/custom/manage_main remove content
+* http://localhost:8090/site18/plone/portal_skins/custom/manage_main remove content
 
 * http://localhost:8090/site18/plone/portal_skins/manage_propertiesForm
+REMOVE:
   twolanguagesportlet
   cachesetup
   kupu_tests kupu kupu_plone
   linguafaq*
 
-* http://localhost:8090/site18/plone/portal_css/manage_cssForm
-  twolanguagesportlet.css
-  kupu*.css
+ANCIEN:
+custom
+linguafaq_images
+linguafaq_scripts
+geoloc_images
+geoloc_scripts
+LinguaPlone
+PloneFormGen
+CMFPlacefulWorkflow
+cache_setup
+LanguageTool
+cmfeditions_views
+CMFEditions
+ChangeSet
+kupu_plone
+kupu
+kupu_tests
+archetypes
+archetypes_kss
+mimetypes_icons
+plone_kss
+ATContentTypes
+ATReferenceBrowserWidget
+ResourceRegistries
+PasswordReset
+gruf
+plone_ecmascript
+plone_wysiwyg
+plone_prefs
+plone_portlets
+plone_templates
+plone_styles
+plone_form_scripts
+plone_scripts
+plone_forms
+plone_images
+plone_content
+plone_login
+plone_deprecated
+plone_3rdParty
+cmf_legacy
   
 
-* /site18/plone/@@activate-expert-mode-for-fixing-persistent-utilities
+* http://localhost:8090/site18/plone/@@activate-expert-mode-for-fixing-persistent-utilities
   tout ce qui est relatif à collective.indexing :
   - <InterfaceClass collective.indexing.indexer.IPortalCatalogQueueProcessor> -> 3 occurences
   - <InterfaceClass collective.indexing.interfaces.IIndexingConfig> -> 2 occurences
