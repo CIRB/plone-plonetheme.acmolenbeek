@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0 (2011-11-29)
+1.0 (2013-03-07)
 ----------------
 
 - Package created using zopeskel
