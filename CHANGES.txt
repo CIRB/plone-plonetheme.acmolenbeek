@@ -4,7 +4,7 @@ Changelog
 1.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- fix home breathcrumb.
 
 
 1.0 (2013-03-07)
